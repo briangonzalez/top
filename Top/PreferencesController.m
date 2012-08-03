@@ -7,8 +7,6 @@
 - (id)init
 {
   self = [super initWithWindowNibName:@"Preferences"];
-//  [[self window] makeKeyAndOrderFront:self];
-  MenubarController *_menubarController;
   return self;
 }
 
@@ -85,11 +83,11 @@
 
 -(IBAction)showWindow:(id)sender
 {
-//  [super showWindow:sender];
+  [[super window] center];
   [[super window] makeKeyAndOrderFront:sender];
 }
 
--(IBAction)doSomething:(NSButton *)theButton
+-(IBAction)toggleLogin:(NSButton *)theButton
 {
   if([theButton state]==NSOnState){
     NSLog(@"Adding app to login Items.");
@@ -100,5 +98,11 @@
     [self deleteAppFromLoginItem];
   }
 }
+
+-(IBAction)closeApp:(id)sender
+{
+  [NSApp terminate: nil];
+}
+
 
 @end

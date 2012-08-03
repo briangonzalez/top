@@ -21,6 +21,7 @@ upload*.sh
 *.rb
 pkg/
 bin
+assets
 
 # default project workspace
 project.xcworkspace

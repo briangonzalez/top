@@ -12,6 +12,7 @@
 		D36BA98215CC2FA0005ABC6C /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = D36BA97F15CC2F95005ABC6C /* PreferencesController.m */; };
 		D36BA98615CC2FB3005ABC6C /* StatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = D36BA98515CC2FAF005ABC6C /* StatusItemView.m */; };
 		D36BA98A15CC3104005ABC6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D36BA98815CC2FD3005ABC6C /* main.m */; };
+		D36BA98C15CC3918005ABC6C /* top.icns in Resources */ = {isa = PBXBuildFile; fileRef = D36BA98B15CC3918005ABC6C /* top.icns */; };
 		D3A0C5AD15CC2A0400E94FFF /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3A0C5AC15CC2A0400E94FFF /* Preferences.xib */; };
 		D3A0C5AF15CC2A0B00E94FFF /* Top-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3A0C5AE15CC2A0B00E94FFF /* Top-Info.plist */; };
 		D3A0C5B115CC2A2F00E94FFF /* Top.png in Resources */ = {isa = PBXBuildFile; fileRef = D3A0C5B015CC2A2F00E94FFF /* Top.png */; };
@@ -31,6 +32,7 @@
 		D36BA98515CC2FAF005ABC6C /* StatusItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = StatusItemView.m; path = Top/StatusItemView.m; sourceTree = "<group>"; };
 		D36BA98815CC2FD3005ABC6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Top/main.m; sourceTree = "<group>"; };
 		D36BA98915CC2FD3005ABC6C /* Top-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Top-Prefix.pch"; path = "Top/Top-Prefix.pch"; sourceTree = "<group>"; };
+		D36BA98B15CC3918005ABC6C /* top.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = top.icns; sourceTree = "<group>"; };
 		D3A0C5AC15CC2A0400E94FFF /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Preferences.xib; path = Top/Preferences.xib; sourceTree = "<group>"; };
 		D3A0C5AE15CC2A0B00E94FFF /* Top-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Top-Info.plist"; path = "Top/Top-Info.plist"; sourceTree = "<group>"; };
 		D3A0C5B015CC2A2F00E94FFF /* Top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Top.png; path = Top/Top.png; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		DD4F7BF913C30F9F00825C6E = {
 			isa = PBXGroup;
 			children = (
+				D36BA98B15CC3918005ABC6C /* top.icns */,
 				D36BA96D15CC2EC1005ABC6C /* Sources */,
 				DD4F7C2813C3123E00825C6E /* User Interface */,
 				DD4F7C0713C30F9F00825C6E /* Frameworks */,
@@ -205,6 +208,7 @@
 				D3A0C5B115CC2A2F00E94FFF /* Top.png in Resources */,
 				D3A0C5B315CC2A3700E94FFF /* TopHighlighted.png in Resources */,
 				D3A0C5B515CC2A5500E94FFF /* MainMenu.xib in Resources */,
+				D36BA98C15CC3918005ABC6C /* top.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +278,7 @@
 		DD4F7C2313C30F9F00825C6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Top/Top-Prefix.pch";
@@ -288,6 +293,7 @@
 		DD4F7C2413C30F9F00825C6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Top/Top-Prefix.pch";

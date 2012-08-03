@@ -52,5 +52,4 @@ void *kContextActivePanel = &kContextActivePanel;
   [self.preferencesController showWindow:self];
 }
 
-
 @end
